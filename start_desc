@@ -1,0 +1,6 @@
+Run code before the user sessions starts
+A script that can contain simple commands to be run at runtime (as an ENTRYPOINT to the docker container). If you want this to be a shell script, make sure the first line is #!/bin/bash. The last line must be exec "$@" or equivalent.
+
+Use this to set environment variables that software installed in your container expects to be set. This script is executed each time your binder is started and should at most take a few seconds to run.
+
+If you only need to run things once during the build phase use postBuild - Run code after installing the environment.
