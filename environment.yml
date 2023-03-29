@@ -5,5 +5,7 @@ dependencies:
   - python
   - numpy
   - pip
-  - sos-notebook
   - pandas
+  - sos=0.24.0=pyhd8ed1ab_0
+  - sos-notebook=0.20.1=py_0
+  - sos-r=0.19.6=py_0
